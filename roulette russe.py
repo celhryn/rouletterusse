@@ -1,4 +1,4 @@
-# Créé par BAPTISTE.PUAUD, le 02/03/2022 en Python 3.7
+# Créé par Celhryn, le 02/03/2022 en Python 3.7
 import pyautogui
 from time import sleep
 import random
