@@ -8,13 +8,13 @@ pyautogui.alert("Si tu joues à ce jeu c'est que t'es vraiment con.")
 print("Le principe du jeu est simple : Faire rouler le chargeur d'un six-coups avec un nombre de balle entre 1 et 6 avant de tirer sur sa tempe.")
 print("Si le tir vous tue, vous avez perdu")
 
-ndb = input("Choisis un nombre de balles entre 1 et 6 : ")
+ndb = int(input("Choisis un nombre de balles entre 1 et 6 : "))
 
 if ndb > 6 :
     pyautogui.alert("Le nombre de balles est incorrect")
 
 elif ndb <= 6 and ndb >= 1 :
-    pyautogui.alert("Partie lancée avec", ndb, "balles")
+    pyautogui.alert("Partie lancée avecle nombre de balles choisi")
     print("Vous faites rouler le chargeur")
     delay = 5
     for i in range(5):
