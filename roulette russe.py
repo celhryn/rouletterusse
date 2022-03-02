@@ -24,9 +24,9 @@ try :
             delay = delay - 1
         result = random.randint(ndb, 7)
         if result >= ndb :
-            pyautogui.alert("WASTED")
-        else :
             pyautogui.alert("Victoire")
+        else :
+            pyautogui.alert("WASTED")
 
     else :
         pyautogui.alert("Le nombre de balles est incorrect")
