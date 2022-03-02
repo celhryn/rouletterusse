@@ -23,7 +23,7 @@ try :
             print(delay, "...")
             delay = delay - 1
         result = random.randint(ndb, 7)
-        if result < ndb :
+        if result >= ndb :
             pyautogui.alert("WASTED")
         else :
             pyautogui.alert("Victoire")
