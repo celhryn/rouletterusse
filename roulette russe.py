@@ -15,18 +15,18 @@ try :
       pyautogui.alert("Le nombre de balles est incorrect")
 
     elif ndb <= 6 and ndb >= 1 :
-        pyautogui.alert("Partie lancée avecle nombre de balles choisi")
+        pyautogui.alert("Partie lancée avec le nombre de balles choisi")
         print("Vous faites rouler le chargeur")
         delay = 5
         for i in range(5):
             sleep(1)
             print(delay, "...")
             delay = delay - 1
-        result = random.randint(1,ndb + 1)
-        if result == 1 :
-            pyautogui.alert("Victoire")
-        else :
+        result = random.randint(ndb, 7)
+        if result < ndb :
             pyautogui.alert("WASTED")
+        else :
+            pyautogui.alert("Victoire")
 
     else :
         pyautogui.alert("Le nombre de balles est incorrect")
